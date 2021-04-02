@@ -15,7 +15,13 @@
     body {
         background-color: #111;
     }
+    .container {
+        align-items: center;
+        text-align: center;
+    }
     .max-width {
+        display: block;
+        position: absolute;
         max-width: 500px;
         width: 100%;
         padding: 10px;
@@ -24,6 +30,8 @@
         background-color: #fff;
         box-shadow: 0 0 5px #fff;
         text-align: center;
+        align-items: center;
+        border-radius: 5px;
     }
     h1 {
         font-family: 'Courier New', Courier, monospace;
@@ -53,13 +61,16 @@
 </style>
 
 <body>
-
-    <div class="max-width">
-        <button class="bg-green">Iniciar</button>
-        <button class="bg-yellow">Pausar</button>
-        <button class="bg-red">Parar</button>
-        <h1 id="counter">00:00:00</h1>
+    <div class="container">
+        <div class="max-width">
+            <button class="bg-green">Iniciar</button>
+            <button class="bg-yellow">Pausar</button>
+            <button class="bg-red">Parar</button>
+            <h1 id="counter">00:00:00</h1>
+        </div>
     </div>
-<script src="cron.js"></script>    
+
+<script src="cron.js"></script>
+
 </body>
 </html>
